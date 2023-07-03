@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Calculator</h1>    
+   <div class="main"> 
+     <marquee behavior="scroll" direction="left" id="marquee_tag">Welcome to Calculator</marquee>
+     <input type="text" id = 'display_calc'>
+      <div class="btn">
+         <input type="button" value = 'C' onclick = "Clear()">
+         <input type="button" value = '%' onclick = "number_('%')">
+         <input type="button" value = '←' onclick = "Back('←')">
+         <input type="button" value = '/' onclick = "number_('/')">
+         <br>
+         <input type="button" value = '7' onclick = "number_('7')">
+         <input type="button" value = '8' onclick = "number_('8')">
+         <input type="button" value = '9' onclick = "number_('9')">
+         <input type="button" value = 'x' onclick = "number_('*')">
+         <br>
+         <input type="button" value = '4' onclick = "number_('4')">
+         <input type="button" value = '5' onclick = "number_('5')">
+         <input type="button" value = '6' onclick = "number_('6')">
+         <input type="button" value = '-' onclick = "number_('-')">
+         <br>
+         <input type="button" value = '1' onclick = "number_('1')">
+         <input type="button" value = '2' onclick = "number_('2')">
+         <input type="button" value = '3' onclick = "number_('3')">
+         <input type="button" value = '+' onclick = "number_('+')">
+         <br>
+         <input type="button" value = '00'onclick = "number_('00')">
+         <input type="button" value = '0' onclick = "number_('0')">
+         <input type="button" value = '.' onclick = "number_('.')">
+         <input type="button" value = '=' onclick = "Result()">
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
